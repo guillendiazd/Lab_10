@@ -5,6 +5,15 @@
  */
 package david_diaz_examenii;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import javax.swing.JOptionPane;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+
 /**
  *
  * @author dragn
@@ -16,6 +25,7 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -27,7 +37,833 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDRuso = new javax.swing.JDialog();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jTFRuso_Nombre = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTFRuso_ID = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTFRuso_Edad = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jTFRuso_Rango = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jCBRuso_TipoArma = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
+        jDAleman = new javax.swing.JDialog();
+        jButton2 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jTFAleman_Alias = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jTFAleman_Edad = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jTFAleman_Casta = new javax.swing.JTextField();
+        jCBAleman_TipoArma = new javax.swing.JComboBox<>();
+        jLabel13 = new javax.swing.JLabel();
+        jDAlumno = new javax.swing.JDialog();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jTFAlumno_Apodo = new javax.swing.JTextField();
+        jCBAlumno_TipoArma = new javax.swing.JComboBox<>();
+        jLabel17 = new javax.swing.JLabel();
+        jTFAlumno_NumeroCuenta = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jTFAlumno_Edad = new javax.swing.JTextField();
+        jTFAlumno_GradoAcademico = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jDSimulacion = new javax.swing.JDialog();
+        jLabel21 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTASimulacion = new javax.swing.JTextArea();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jD_Arbol = new javax.swing.JDialog();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        Arbolito = new javax.swing.JTree();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jPOPMRuso = new javax.swing.JPopupMenu();
+        jMIModificar = new javax.swing.JMenuItem();
+        DarAlta = new javax.swing.JMenuItem();
+        jPOPMAleman = new javax.swing.JPopupMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jPOPMAlumno = new javax.swing.JPopupMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jDRuso1 = new javax.swing.JDialog();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jTFRuso_Nombre1 = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jTFRuso_ID1 = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        jTFRuso_Edad1 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        jTFRuso_Rango1 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        jCBRuso_TipoArma1 = new javax.swing.JComboBox<>();
+        jButton7 = new javax.swing.JButton();
+        jDAleman1 = new javax.swing.JDialog();
+        jButton8 = new javax.swing.JButton();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jTFAleman_Alias1 = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        jTFAleman_Edad1 = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        jTFAleman_Casta1 = new javax.swing.JTextField();
+        jCBAleman_TipoArma1 = new javax.swing.JComboBox<>();
+        jLabel34 = new javax.swing.JLabel();
+        jDAlumno1 = new javax.swing.JDialog();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jTFAlumno_Apodo1 = new javax.swing.JTextField();
+        jCBAlumno_TipoArma1 = new javax.swing.JComboBox<>();
+        jLabel38 = new javax.swing.JLabel();
+        jTFAlumno_NumeroCuenta1 = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jTFAlumno_Edad1 = new javax.swing.JTextField();
+        jTFAlumno_GradoAcademico1 = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setText("Ruso");
+
+        jLabel2.setText("Nombre:");
+
+        jLabel3.setText("ID:");
+
+        jLabel4.setText("Edad:");
+
+        jLabel5.setText("Rango:");
+
+        jLabel7.setText("Tipo de Arma:");
+
+        jCBRuso_TipoArma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AK-47", "Revolver Navant", "RPG-7" }));
+
+        jButton1.setText("Guardar");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDRusoLayout = new javax.swing.GroupLayout(jDRuso.getContentPane());
+        jDRuso.getContentPane().setLayout(jDRusoLayout);
+        jDRusoLayout.setHorizontalGroup(
+            jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDRusoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDRusoLayout.createSequentialGroup()
+                        .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(jDRusoLayout.createSequentialGroup()
+                                .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRusoLayout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_Rango))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRusoLayout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_Edad))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRusoLayout.createSequentialGroup()
+                                        .addComponent(jLabel2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRusoLayout.createSequentialGroup()
+                                        .addComponent(jLabel3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_ID)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCBRuso_TipoArma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 38, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDRusoLayout.setVerticalGroup(
+            jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDRusoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jTFRuso_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel7)
+                        .addComponent(jCBRuso_TipoArma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jTFRuso_ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jTFRuso_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDRusoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jTFRuso_Rango, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jButton2.setText("Guardar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel8.setText("Aleman");
+
+        jLabel9.setText("Alias:");
+
+        jLabel10.setText("Edad:");
+
+        jLabel11.setText("Casta:");
+
+        jCBAleman_TipoArma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MP 40", "Ametralladora MG42", "Pistolas Walther P38" }));
+
+        jLabel13.setText("Tipo de Arma:");
+
+        javax.swing.GroupLayout jDAlemanLayout = new javax.swing.GroupLayout(jDAleman.getContentPane());
+        jDAleman.getContentPane().setLayout(jDAlemanLayout);
+        jDAlemanLayout.setHorizontalGroup(
+            jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDAlemanLayout.createSequentialGroup()
+                .addContainerGap(175, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCBAleman_TipoArma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
+            .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDAlemanLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jDAlemanLayout.createSequentialGroup()
+                            .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel8)
+                                .addGroup(jDAlemanLayout.createSequentialGroup()
+                                    .addComponent(jLabel11)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jTFAleman_Casta, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jDAlemanLayout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAleman_Alias, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jDAlemanLayout.createSequentialGroup()
+                                        .addComponent(jLabel10)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAleman_Edad)
+                                        .addGap(5, 5, 5))))
+                            .addGap(0, 234, Short.MAX_VALUE)))
+                    .addContainerGap()))
+        );
+        jDAlemanLayout.setVerticalGroup(
+            jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDAlemanLayout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jCBAleman_TipoArma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(207, Short.MAX_VALUE))
+            .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDAlemanLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabel8)
+                    .addGap(18, 18, 18)
+                    .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel9)
+                        .addComponent(jTFAleman_Alias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel10)
+                        .addComponent(jTFAleman_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(jDAlemanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel11)
+                        .addComponent(jTFAleman_Casta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
+        );
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel14.setText("Alumno");
+
+        jLabel15.setText("Apodo:");
+
+        jCBAlumno_TipoArma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Discos Duros", "Controles de Wii", "Laptops" }));
+
+        jLabel17.setText("Tipo de Arma:");
+
+        jLabel18.setText("Numero de Cuenta:");
+
+        jLabel19.setText("Edad:");
+
+        jLabel20.setText("Grado Academico:");
+
+        jButton3.setText("Guardar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDAlumnoLayout = new javax.swing.GroupLayout(jDAlumno.getContentPane());
+        jDAlumno.getContentPane().setLayout(jDAlumnoLayout);
+        jDAlumnoLayout.setHorizontalGroup(
+            jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDAlumnoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDAlumnoLayout.createSequentialGroup()
+                        .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel14)
+                            .addGroup(jDAlumnoLayout.createSequentialGroup()
+                                .addComponent(jLabel19)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTFAlumno_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jDAlumnoLayout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTFAlumno_GradoAcademico, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jDAlumnoLayout.createSequentialGroup()
+                                .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jDAlumnoLayout.createSequentialGroup()
+                                        .addComponent(jLabel15)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAlumno_Apodo))
+                                    .addGroup(jDAlumnoLayout.createSequentialGroup()
+                                        .addComponent(jLabel18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAlumno_NumeroCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCBAlumno_TipoArma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 25, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDAlumnoLayout.setVerticalGroup(
+            jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDAlumnoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel14)
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(jTFAlumno_Apodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel17)
+                        .addComponent(jCBAlumno_TipoArma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(jTFAlumno_NumeroCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jTFAlumno_Edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jTFAlumno_GradoAcademico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jMenuItem1.setText("jMenuItem1");
+
+        jDSimulacion.setPreferredSize(new java.awt.Dimension(1000, 500));
+        jDSimulacion.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                jDSimulacionWindowActivated(evt);
+            }
+        });
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel21.setText("Simulación");
+
+        jButton4.setText("Iniciar Simulacion");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+
+        jTASimulacion.setColumns(20);
+        jTASimulacion.setRows(5);
+        jScrollPane3.setViewportView(jTASimulacion);
+
+        javax.swing.GroupLayout jDSimulacionLayout = new javax.swing.GroupLayout(jDSimulacion.getContentPane());
+        jDSimulacion.getContentPane().setLayout(jDSimulacionLayout);
+        jDSimulacionLayout.setHorizontalGroup(
+            jDSimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDSimulacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDSimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDSimulacionLayout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addGap(0, 781, Short.MAX_VALUE))
+                    .addComponent(jScrollPane3))
+                .addContainerGap())
+        );
+        jDSimulacionLayout.setVerticalGroup(
+            jDSimulacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDSimulacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton4)
+                .addContainerGap(149, Short.MAX_VALUE))
+        );
+
+        jMenu3.setText("jMenu3");
+
+        jMenu4.setText("jMenu4");
+
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Soldados");
+        Arbolito.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        Arbolito.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ArbolitoMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(Arbolito);
+
+        jButton5.setText("Listar");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
+
+        jButton6.setText("Guardar en Binario");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jD_ArbolLayout = new javax.swing.GroupLayout(jD_Arbol.getContentPane());
+        jD_Arbol.getContentPane().setLayout(jD_ArbolLayout);
+        jD_ArbolLayout.setHorizontalGroup(
+            jD_ArbolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jD_ArbolLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jD_ArbolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jD_ArbolLayout.setVerticalGroup(
+            jD_ArbolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jD_ArbolLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jD_ArbolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jD_ArbolLayout.createSequentialGroup()
+                        .addComponent(jButton5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton6))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+
+        jMIModificar.setText("Modificar");
+        jMIModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIModificarActionPerformed(evt);
+            }
+        });
+        jPOPMRuso.add(jMIModificar);
+
+        DarAlta.setText("Dar de Alta");
+        DarAlta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DarAltaActionPerformed(evt);
+            }
+        });
+        jPOPMRuso.add(DarAlta);
+
+        jMenuItem4.setText("Modificar");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jPOPMAleman.add(jMenuItem4);
+
+        jMenuItem5.setText("Dar de Alta");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jPOPMAleman.add(jMenuItem5);
+
+        jMenuItem6.setText("Modificar");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jPOPMAlumno.add(jMenuItem6);
+
+        jMenuItem7.setText("Dar de Alta");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jPOPMAlumno.add(jMenuItem7);
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel22.setText("Ruso");
+
+        jLabel23.setText("Nombre:");
+
+        jLabel24.setText("ID:");
+
+        jLabel25.setText("Edad:");
+
+        jLabel26.setText("Rango:");
+
+        jLabel28.setText("Tipo de Arma:");
+
+        jCBRuso_TipoArma1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AK-47", "Revolver Navant", "RPG-7" }));
+
+        jButton7.setText("Guardar");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDRuso1Layout = new javax.swing.GroupLayout(jDRuso1.getContentPane());
+        jDRuso1.getContentPane().setLayout(jDRuso1Layout);
+        jDRuso1Layout.setHorizontalGroup(
+            jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDRuso1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDRuso1Layout.createSequentialGroup()
+                        .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addGroup(jDRuso1Layout.createSequentialGroup()
+                                .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRuso1Layout.createSequentialGroup()
+                                        .addComponent(jLabel26)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_Rango1))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRuso1Layout.createSequentialGroup()
+                                        .addComponent(jLabel25)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_Edad1))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRuso1Layout.createSequentialGroup()
+                                        .addComponent(jLabel23)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_Nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jDRuso1Layout.createSequentialGroup()
+                                        .addComponent(jLabel24)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFRuso_ID1)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel28)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCBRuso_TipoArma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 38, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDRuso1Layout.setVerticalGroup(
+            jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDRuso1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel22)
+                .addGap(18, 18, 18)
+                .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jTFRuso_Nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel28)
+                        .addComponent(jCBRuso_TipoArma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jTFRuso_ID1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(jTFRuso_Edad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDRuso1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(jTFRuso_Rango1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jButton8.setText("Guardar");
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel29.setText("Aleman");
+
+        jLabel30.setText("Alias:");
+
+        jLabel31.setText("Edad:");
+
+        jLabel32.setText("Casta:");
+
+        jCBAleman_TipoArma1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MP 40", "Ametralladora MG42", "Pistolas Walther P38" }));
+
+        jLabel34.setText("Tipo de Arma:");
+
+        javax.swing.GroupLayout jDAleman1Layout = new javax.swing.GroupLayout(jDAleman1.getContentPane());
+        jDAleman1.getContentPane().setLayout(jDAleman1Layout);
+        jDAleman1Layout.setHorizontalGroup(
+            jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDAleman1Layout.createSequentialGroup()
+                .addContainerGap(175, Short.MAX_VALUE)
+                .addComponent(jLabel34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCBAleman_TipoArma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
+            .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDAleman1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jDAleman1Layout.createSequentialGroup()
+                            .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel29)
+                                .addGroup(jDAleman1Layout.createSequentialGroup()
+                                    .addComponent(jLabel32)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jTFAleman_Casta1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jDAleman1Layout.createSequentialGroup()
+                                        .addComponent(jLabel30)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAleman_Alias1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jDAleman1Layout.createSequentialGroup()
+                                        .addComponent(jLabel31)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAleman_Edad1)
+                                        .addGap(5, 5, 5))))
+                            .addGap(0, 234, Short.MAX_VALUE)))
+                    .addContainerGap()))
+        );
+        jDAleman1Layout.setVerticalGroup(
+            jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDAleman1Layout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(jCBAleman_TipoArma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(207, Short.MAX_VALUE))
+            .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jDAleman1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabel29)
+                    .addGap(18, 18, 18)
+                    .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel30)
+                        .addComponent(jTFAleman_Alias1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel31)
+                        .addComponent(jTFAleman_Edad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(18, 18, 18)
+                    .addGroup(jDAleman1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel32)
+                        .addComponent(jTFAleman_Casta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
+        );
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel35.setText("Alumno");
+
+        jLabel36.setText("Apodo:");
+
+        jCBAlumno_TipoArma1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Discos Duros", "Controles de Wii", "Laptops" }));
+
+        jLabel38.setText("Tipo de Arma:");
+
+        jLabel39.setText("Numero de Cuenta:");
+
+        jLabel40.setText("Edad:");
+
+        jLabel41.setText("Grado Academico:");
+
+        jButton9.setText("Guardar");
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDAlumno1Layout = new javax.swing.GroupLayout(jDAlumno1.getContentPane());
+        jDAlumno1.getContentPane().setLayout(jDAlumno1Layout);
+        jDAlumno1Layout.setHorizontalGroup(
+            jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDAlumno1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDAlumno1Layout.createSequentialGroup()
+                        .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35)
+                            .addGroup(jDAlumno1Layout.createSequentialGroup()
+                                .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jDAlumno1Layout.createSequentialGroup()
+                                        .addComponent(jLabel36)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAlumno_Apodo1))
+                                    .addGroup(jDAlumno1Layout.createSequentialGroup()
+                                        .addComponent(jLabel39)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTFAlumno_NumeroCuenta1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel38)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCBAlumno_TipoArma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jDAlumno1Layout.createSequentialGroup()
+                                .addComponent(jLabel40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTFAlumno_Edad1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jDAlumno1Layout.createSequentialGroup()
+                                .addComponent(jLabel41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTFAlumno_GradoAcademico1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 25, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDAlumno1Layout.setVerticalGroup(
+            jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDAlumno1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel35)
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(jTFAlumno_Apodo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel38)
+                        .addComponent(jCBAlumno_TipoArma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(jTFAlumno_NumeroCuenta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(jTFAlumno_Edad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDAlumno1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(jTFAlumno_GradoAcademico1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jMenu1.setText("Ejercitos");
+
+        jMenuItem11.setText("Reclutar Ruso");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem11);
+
+        jMenuItem12.setText("Reclutar Aleman");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem12);
+
+        jMenuItem13.setText("Reclutar Alumno");
+        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem13ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem13);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Simulación");
+
+        jMenuItem2.setText("Iniciar Simulación");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu2);
+
+        jMenu5.setText("Arbol");
+
+        jMenuItem3.setText("Listar en el Arbol");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu5);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -37,11 +873,445 @@ public class Main extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 281, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        jTASimulacion.setText("");
+        while((alemanes.isEmpty() && alumnos.isEmpty() ) || (rusos.isEmpty() && alumnos.isEmpty()) || (rusos.isEmpty() && alemanes.isEmpty())){
+            jTASimulacion.append("Inicia La Batalla \n");
+            //Primera Ronda
+            boolean pass = true;
+            if (rusos.size() < alemanes.size()) {
+                pass = false;
+            }
+            for (int i = 0; i < rusos.size(); i++) {
+                if (pass && i == alemanes.size()-1) {
+                    int tem = rusos.size() - alemanes.size();
+                    for (int j = i; j < rusos.size(); j++) {
+                        int res = alemanes.get(i).getResistencia() - rusos.get(j).getPoder_fuego();
+                        System.out.println(res);
+                        alemanes.get(i).setResistencia(res);
+                        jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                        jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                    }
+                } else {
+                    int res = alemanes.get(i).getResistencia() - rusos.get(i).getPoder_fuego();
+                    System.out.println(res);
+                    alemanes.get(i).setResistencia(res);
+                    jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                    jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                }
+                
+                if (alemanes.get(i).getResistencia() < 0) {
+                    alemanes.remove(i);
+                    jTASimulacion.append(alemanes.get(i).toString() + "Ha Caído en Combate \n");
+                }
+                
+            }
+            boolean pass1 = true;
+            if (rusos.size() < alumnos.size()) {
+                pass1 = false;
+            }
+            for (int i = 0; i < rusos.size(); i++) {
+                if (pass1 && i == alumnos.size()-1) {
+                    int tem = rusos.size() - alumnos.size();
+                    for (int j = i; j < rusos.size(); j++) {
+                        int res = alumnos.get(i).getResistencia() - rusos.get(j).getPoder_fuego();
+                        System.out.println(res);
+                        alumnos.get(i).setResistencia(res);
+                        jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                        jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                    }
+                } else {
+                    int res = alumnos.get(i).getResistencia() - rusos.get(i).getPoder_fuego();
+                    System.out.println(res);
+                    alumnos.get(i).setResistencia(res);
+                    jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                    jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                }
+                
+                if (alumnos.get(i).getResistencia() < 0) {
+                    alumnos.remove(i);
+                    jTASimulacion.append(alumnos.get(i).toString() + "Ha Caído en Combate \n");
+                }
+            }
+            //Segunda Ronda
+            boolean pass2 = true;
+            if (alemanes.size() < rusos.size()) {
+                pass2 = false;
+            }
+            for (int i = 0; i < alemanes.size(); i++) {
+                if (pass2 && i == rusos.size()-1) {
+                    int tem = alemanes.size() - rusos.size();
+                    for (int j = i; j < alemanes.size(); j++) {
+                        int res = rusos.get(i).getResistencia() - alemanes.get(j).getPoder_fuego();
+                        rusos.get(i).setResistencia(res);
+                        jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                        jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                    }
+                } else {
+                    int res = rusos.get(i).getResistencia() - alemanes.get(i).getPoder_fuego();
+                    rusos.get(i).setResistencia(res);
+                    jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                    jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                }
+                
+                if (rusos.get(i).getResistencia() < 0) {
+                    rusos.remove(i);
+                    jTASimulacion.append(rusos.get(i).toString() + "Ha Caído en Combate \n");
+                }
+                
+            }
+            boolean pass3 = true;
+            if (alemanes.size() < alumnos.size()) {
+                pass3 = false;
+            }
+            for (int i = 0; i < alemanes.size(); i++) {
+                if (pass3 && i == alumnos.size()-1) {
+                    int tem = alemanes.size() - alumnos.size();
+                    for (int j = i; j < rusos.size(); j++) {
+                        int res = alemanes.get(i).getResistencia() - alemanes.get(j).getPoder_fuego();
+                        alumnos.get(i).setResistencia(res);
+                        jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                        jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                    }
+                } else {
+                    int res = alumnos.get(i).getResistencia() - alemanes.get(i).getPoder_fuego();
+                    alumnos.get(i).setResistencia(res);
+                    jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                    jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                }
+                
+                if (alumnos.get(i).getResistencia() < 0) {
+                    alumnos.remove(i);
+                    jTASimulacion.append(alumnos.get(i).toString() + "Ha Caído en Combate \n");
+                }
+            }
+            //Tercera Ronda
+            boolean pass4 = true;
+            if (alumnos.size() < rusos.size()) {
+                pass4 = false;
+            }
+            for (int i = 0; i < alumnos.size(); i++) {
+                if (pass4 && i == rusos.size()-1) {
+                    int tem = alumnos.size() - rusos.size();
+                    for (int j = i; j < alumnos.size(); j++) {
+                        int res = rusos.get(i).getResistencia() - alumnos.get(j).getPoder_fuego();
+                        rusos.get(i).setResistencia(res);
+                        jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                        jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                    }
+                } else {
+                    int res = rusos.get(i).getResistencia() - alumnos.get(i).getPoder_fuego();
+                    rusos.get(i).setResistencia(res);
+                    jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                    jTASimulacion.append(rusos.get(i).toString() + "Poder: " + rusos.get(i).getPoder_fuego() + " Res: " + rusos.get(i).getResistencia() + "\n");
+                }
+                
+                if (rusos.get(i).getResistencia() < 0) {
+                    rusos.remove(i);
+                    jTASimulacion.append(rusos.get(i).toString() + "Ha Caído en Combate \n");
+                }
+            }
+            boolean pass5 = true;
+            if (alumnos.size() < alemanes.size()) {
+                pass5 = false;
+            }
+            for (int i = 0; i < alumnos.size(); i++) {
+                if (pass5 && i == alemanes.size()-1) {
+                    int tem = alumnos.size() - alemanes.size();
+                    for (int j = i; j < alumnos.size(); j++) {
+                        int res = alemanes.get(i).getResistencia() - alumnos.get(j).getPoder_fuego();
+                        System.out.println(res);
+                        alemanes.get(i).setResistencia(res);
+                        jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                        jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                    }
+                } else {
+                    int res = alemanes.get(i).getResistencia() - alumnos.get(i).getPoder_fuego();
+                    alemanes.get(i).setResistencia(res);
+                    jTASimulacion.append(alumnos.get(i).toString() + "Poder: " + alumnos.get(i).getPoder_fuego() + " Res: " + alumnos.get(i).getResistencia() + "\n");
+                    jTASimulacion.append(alemanes.get(i).toString() + "Poder: " + alemanes.get(i).getPoder_fuego() + " Res: " + alemanes.get(i).getResistencia() + "\n");
+                }
+                
+                if (alemanes.get(i).getResistencia() < 0) {
+                    alemanes.remove(i);
+                    jTASimulacion.append(alemanes.get(i).toString() + "Ha Caído en Combate \n");
+                }
+            }
+        }
+        if (rusos.size()>0) {
+            JOptionPane.showMessageDialog(this, "Ganan los Rusos");
+        } else if (alemanes.size()>0) {
+            JOptionPane.showMessageDialog(this, "Ganan los Alemanes");
+        }else if (alumnos.size()>0) {
+            JOptionPane.showMessageDialog(this, "Ganan los Alumnos");
+        }
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        int poder_fuego = 0;
+        int res = Integer.parseInt(jTFRuso_Edad.getText()) * 8;
+        if (((String)jCBRuso_TipoArma.getSelectedItem()).equalsIgnoreCase("AK-47")) {
+            poder_fuego = 27;
+        }else if (((String)jCBRuso_TipoArma.getSelectedItem()).equalsIgnoreCase("Revolver Navant")) {
+            poder_fuego = 13;
+        }else if (((String)jCBRuso_TipoArma.getSelectedItem()).equalsIgnoreCase("RPG-7")) {
+            poder_fuego = 57;
+        }
+        if (Integer.parseInt(jTFRuso_Edad.getText()) >= 18 ) {
+            if (((String) jCBRuso_TipoArma.getSelectedItem()).equalsIgnoreCase("RPG-7") && Integer.parseInt(jTFRuso_Edad.getText()) < 25) {
+                JOptionPane.showMessageDialog(null, "Edad no suficiente para equipar el RPG-7");
+            } else {
+                rusos.add(new Ruso(jTFRuso_Nombre.getText(), jTFRuso_ID.getText(), Integer.parseInt(jTFRuso_Edad.getText()), Integer.parseInt(jTFRuso_Rango.getText()), res, ((String)jCBRuso_TipoArma.getSelectedItem()), poder_fuego));
+                JOptionPane.showMessageDialog(this, "Ruso Creado");
+            }
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Edad incorrecta");
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        int poder_fuego = 0;
+        int res = Integer.parseInt(jTFAleman_Edad.getText()) * 8;
+        if (((String)jCBAleman_TipoArma.getSelectedItem()).equalsIgnoreCase("MP 40")) {
+            poder_fuego = 25;
+        }else if (((String)jCBAleman_TipoArma.getSelectedItem()).equalsIgnoreCase("MG42")) {
+            poder_fuego = 32;
+        }else if (((String)jCBAleman_TipoArma.getSelectedItem()).equalsIgnoreCase("Walther P38")) {
+            poder_fuego = 11;
+        }
+        if (Integer.parseInt(jTFAleman_Edad.getText()) > 0) {
+            alemanes.add(new Aleman(jTFAleman_Alias.getText(), Integer.parseInt(jTFRuso_Edad.getText()), jTFAleman_Casta.getText(), res, ((String)jCBAleman_TipoArma.getSelectedItem()), poder_fuego));
+            JOptionPane.showMessageDialog(this, "Aleman Creado");
+        } else {
+            JOptionPane.showMessageDialog(null, "Edad incorrecta");
+        }
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        jDRuso.setModal(true);
+        jDRuso.pack();
+        jDRuso.setLocationRelativeTo(null);
+        jDRuso.setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        jDAleman.setModal(true);
+        jDAleman.pack();
+        jDAleman.setLocationRelativeTo(null);
+        jDAleman.setVisible(true);
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        jDSimulacion.setModal(true);
+        jDSimulacion.pack();
+        jDSimulacion.setLocationRelativeTo(null);
+        jDSimulacion.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        DefaultTreeModel modelo = (DefaultTreeModel)Arbolito.getModel();
+        DefaultMutableTreeNode raiz = (DefaultMutableTreeNode) modelo.getRoot();
+        DefaultMutableTreeNode ruso = new DefaultMutableTreeNode ("Rusos");
+        DefaultMutableTreeNode aleman = new DefaultMutableTreeNode ("Alemanes");
+        DefaultMutableTreeNode alumno = new DefaultMutableTreeNode ("Alumno");
+        for (Ruso r : rusos) {
+            DefaultMutableTreeNode non = new DefaultMutableTreeNode(new Ruso(r.getNombre(), r.getId(), r.getEdad(), r.getRango(), r.getResistencia(), r.getTipo_arma(), r.getPoder_fuego()));
+            DefaultMutableTreeNode id = new DefaultMutableTreeNode("ID " + r.getId());
+            DefaultMutableTreeNode ed = new DefaultMutableTreeNode("Edad " + r.getEdad());
+            DefaultMutableTreeNode re = new DefaultMutableTreeNode("Resistencia " + r.getResistencia());
+            DefaultMutableTreeNode ta = new DefaultMutableTreeNode("Tipo Arma " + r.getTipo_arma());
+            DefaultMutableTreeNode po = new DefaultMutableTreeNode("Poder Fuego " + r.getPoder_fuego());
+            non.add(id);
+            non.add(ed);
+            non.add(re);
+            non.add(ta);
+            non.add(po);
+            ruso.add(non);
+        }
+        for (Aleman r : alemanes) {
+            DefaultMutableTreeNode non = new DefaultMutableTreeNode(new Aleman(r.getAlias(), r.getEdad(), r.getCasta(), r.getResistencia(), r.getTipo_arma(), r.getPoder_fuego()));
+            DefaultMutableTreeNode id = new DefaultMutableTreeNode("Casta " + r.getCasta());
+            DefaultMutableTreeNode ed = new DefaultMutableTreeNode("Edad " + r.getEdad());
+            DefaultMutableTreeNode re = new DefaultMutableTreeNode("Resistencia " + r.getResistencia());
+            DefaultMutableTreeNode ta = new DefaultMutableTreeNode("Tipo Arma " + r.getTipo_arma());
+            DefaultMutableTreeNode po = new DefaultMutableTreeNode("Poder Fuego " + r.getPoder_fuego());
+            non.add(id);
+            non.add(ed);
+            non.add(re);
+            non.add(ta);
+            non.add(po);
+            aleman.add(non);
+        }
+        for (Alumno r : alumnos) {
+            DefaultMutableTreeNode non = new DefaultMutableTreeNode(new Alumno(r.getApodo(), r.getNumero_cuenta(), r.getEdad(), r.getResistencia(), r.getGrado_academico(), r.getMochila(), r.getPoder_fuego()));
+            DefaultMutableTreeNode id = new DefaultMutableTreeNode("Numero de Cuenta " + r.getNumero_cuenta());
+            DefaultMutableTreeNode ed = new DefaultMutableTreeNode("Edad " + r.getEdad());
+            DefaultMutableTreeNode re = new DefaultMutableTreeNode("Resistencia " + r.getResistencia());
+            DefaultMutableTreeNode ta = new DefaultMutableTreeNode("Tipo Arma " + r.getMochila());
+            DefaultMutableTreeNode po = new DefaultMutableTreeNode("Poder Fuego " + r.getPoder_fuego());
+            non.add(id);
+            non.add(ed);
+            non.add(re);
+            non.add(ta);
+            non.add(po);
+            alumno.add(non);
+        }
+        raiz.add(alumno);
+        raiz.add(aleman);
+        raiz.add(ruso);
+        modelo.reload();
+    }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        jD_Arbol.setModal(true);
+        jD_Arbol.pack();
+        jD_Arbol.setLocationRelativeTo(null);
+        jD_Arbol.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void ArbolitoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ArbolitoMouseClicked
+        if (evt.isMetaDown()) {
+            int row = Arbolito.getClosestRowForLocation(evt.getX(), evt.getY());
+            Arbolito.setSelectionRow(row);
+            Object v1 = Arbolito.getSelectionPath().getLastPathComponent();
+            nodo_seleccionado = (DefaultMutableTreeNode) v1;
+            if (nodo_seleccionado.getUserObject() instanceof Ruso) {
+                soldado_seleccionada = (Ruso) nodo_seleccionado.getUserObject();
+                jPOPMRuso.show(evt.getComponent(), evt.getX(), evt.getY());
+            } else if (nodo_seleccionado.getUserObject() instanceof Aleman) {
+                soldado_seleccionada = (Aleman) nodo_seleccionado.getUserObject();
+                jPOPMAleman.show(evt.getComponent(), evt.getX(), evt.getY());
+            } else if (nodo_seleccionado.getUserObject() instanceof Aleman) {
+                soldado_seleccionada = (Alumno) nodo_seleccionado.getUserObject();
+                jPOPMAlumno.show(evt.getComponent(), evt.getX(), evt.getY());
+            }
+        }
+    }//GEN-LAST:event_ArbolitoMouseClicked
+
+    private void jMIModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIModificarActionPerformed
+        jDRuso1.setModal(true);
+        jDRuso1.pack();
+        jDRuso1.setLocationRelativeTo(null);
+        jDRuso1.setVisible(true);
+    }//GEN-LAST:event_jMIModificarActionPerformed
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        ((Ruso)soldado_seleccionada).setNombre(jTFRuso_Nombre1.getText());
+        ((Ruso)soldado_seleccionada).setEdad(Integer.parseInt(jTFRuso_Edad1.getText()));
+        ((Ruso)soldado_seleccionada).setId(jTFRuso_ID1.getText());
+        ((Ruso)soldado_seleccionada).setRango(Integer.parseInt(jTFRuso_Rango1.getText()));
+        ((Ruso)soldado_seleccionada).setTipo_arma((String) jCBRuso_TipoArma1.getSelectedItem());
+        
+    }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        jDAleman1.setModal(true);
+        jDAleman1.pack();
+        jDAleman1.setLocationRelativeTo(null);
+        jDAleman1.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        ((Aleman)soldado_seleccionada).setCasta(jTFAleman_Casta1.getText());
+        ((Aleman)soldado_seleccionada).setEdad(Integer.parseInt(jTFAleman_Edad1.getText()));
+        ((Aleman)soldado_seleccionada).setAlias(jTFAleman_Alias1.getText());
+        ((Aleman)soldado_seleccionada).setTipo_arma((String) jCBAleman_TipoArma1.getSelectedItem());
+    }//GEN-LAST:event_jButton8MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        ((Alumno)soldado_seleccionada).setApodo(jTFAlumno_Apodo1.getText());
+        ((Alumno)soldado_seleccionada).setEdad(Integer.parseInt(jTFAlumno_Edad1.getText()));
+        ((Alumno)soldado_seleccionada).setNumero_cuenta(Integer.parseInt(jTFAlumno_Edad1.getText()));
+        ((Alumno)soldado_seleccionada).setGrado_academico(Integer.parseInt(jTFAlumno_GradoAcademico1.getText()));
+        ((Alumno)soldado_seleccionada).setMochila((String) jCBAleman_TipoArma1.getSelectedItem());
+    }//GEN-LAST:event_jButton9MouseClicked
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        jDAlumno1.setModal(true);
+        jDAlumno1.pack();
+        jDAlumno1.setLocationRelativeTo(null);
+        jDAlumno1.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+        jDAlumno.setModal(true);
+        jDAlumno.pack();
+        jDAlumno.setLocationRelativeTo(null);
+        jDAlumno.setVisible(true);
+    }//GEN-LAST:event_jMenuItem13ActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        int poder_fuego = 0;
+        int res = Integer.parseInt(jTFAleman_Edad.getText()) * 8;
+        if (((String)jCBAlumno_TipoArma.getSelectedItem()).equalsIgnoreCase("DiscoS DuroS")) {
+            poder_fuego = 23;
+        }else if (((String)jCBAlumno_TipoArma.getSelectedItem()).equalsIgnoreCase("Control de Wii")) {
+            poder_fuego = 47;
+        }else if (((String)jCBAlumno_TipoArma.getSelectedItem()).equalsIgnoreCase("Laptops")) {
+            poder_fuego = 76;
+        }
+        if (Integer.parseInt(jTFAlumno_Edad.getText()) >= 16) {
+            alumnos.add(new Alumno(jTFAlumno_Apodo.getText(), Integer.parseInt(jTFAlumno_NumeroCuenta.getText()), Integer.parseInt(jTFAlumno_Edad.getText()), res, Integer.parseInt(jTFAlumno_GradoAcademico.getText()), (String) jCBAlumno_TipoArma.getSelectedItem(), poder_fuego));
+            JOptionPane.showMessageDialog(this, "Alumno Creado");
+        } else {
+            JOptionPane.showMessageDialog(null, "Edad incorrecta");
+        }
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        FileOutputStream fw = null;
+        ObjectOutputStream bw = null;
+        try {
+            fw = new FileOutputStream("./save.sav");
+            bw = new ObjectOutputStream(fw);
+            for (Ruso r : rusos) {
+                bw.writeObject(r);
+            }
+            for (Aleman a : alemanes) {
+                bw.writeObject(a);
+            }
+            for (Alumno a : alumnos) {
+                bw.writeObject(a);
+            }
+            bw.flush();
+        } catch (Exception e) {
+        } finally {
+            try {
+                bw.close();
+                fw.close();
+            } catch (Exception e) {
+            }
+        }
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        DefaultTreeModel modelo = (DefaultTreeModel) Arbolito.getModel();
+        modelo.removeNodeFromParent(nodo_seleccionado);
+        modelo.reload();
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+       DefaultTreeModel modelo = (DefaultTreeModel) Arbolito.getModel();
+        modelo.removeNodeFromParent(nodo_seleccionado);
+        modelo.reload();
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void DarAltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DarAltaActionPerformed
+        DefaultTreeModel modelo = (DefaultTreeModel) Arbolito.getModel();
+        modelo.removeNodeFromParent(nodo_seleccionado);
+        modelo.reload();
+    }//GEN-LAST:event_DarAltaActionPerformed
+
+    private void jDSimulacionWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jDSimulacionWindowActivated
+        
+    }//GEN-LAST:event_jDSimulacionWindowActivated
 
     /**
      * @param args the command line arguments
@@ -54,7 +1324,7 @@ public class Main extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -79,5 +1349,115 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTree Arbolito;
+    private javax.swing.JMenuItem DarAlta;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jCBAleman_TipoArma;
+    private javax.swing.JComboBox<String> jCBAleman_TipoArma1;
+    private javax.swing.JComboBox<String> jCBAlumno_TipoArma;
+    private javax.swing.JComboBox<String> jCBAlumno_TipoArma1;
+    private javax.swing.JComboBox<String> jCBRuso_TipoArma;
+    private javax.swing.JComboBox<String> jCBRuso_TipoArma1;
+    private javax.swing.JDialog jDAleman;
+    private javax.swing.JDialog jDAleman1;
+    private javax.swing.JDialog jDAlumno;
+    private javax.swing.JDialog jDAlumno1;
+    private javax.swing.JDialog jDRuso;
+    private javax.swing.JDialog jDRuso1;
+    private javax.swing.JDialog jDSimulacion;
+    private javax.swing.JDialog jD_Arbol;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenuItem jMIModificar;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JPopupMenu jPOPMAleman;
+    private javax.swing.JPopupMenu jPOPMAlumno;
+    private javax.swing.JPopupMenu jPOPMRuso;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTextArea jTASimulacion;
+    private javax.swing.JTextField jTFAleman_Alias;
+    private javax.swing.JTextField jTFAleman_Alias1;
+    private javax.swing.JTextField jTFAleman_Casta;
+    private javax.swing.JTextField jTFAleman_Casta1;
+    private javax.swing.JTextField jTFAleman_Edad;
+    private javax.swing.JTextField jTFAleman_Edad1;
+    private javax.swing.JTextField jTFAlumno_Apodo;
+    private javax.swing.JTextField jTFAlumno_Apodo1;
+    private javax.swing.JTextField jTFAlumno_Edad;
+    private javax.swing.JTextField jTFAlumno_Edad1;
+    private javax.swing.JTextField jTFAlumno_GradoAcademico;
+    private javax.swing.JTextField jTFAlumno_GradoAcademico1;
+    private javax.swing.JTextField jTFAlumno_NumeroCuenta;
+    private javax.swing.JTextField jTFAlumno_NumeroCuenta1;
+    private javax.swing.JTextField jTFRuso_Edad;
+    private javax.swing.JTextField jTFRuso_Edad1;
+    private javax.swing.JTextField jTFRuso_ID;
+    private javax.swing.JTextField jTFRuso_ID1;
+    private javax.swing.JTextField jTFRuso_Nombre;
+    private javax.swing.JTextField jTFRuso_Nombre1;
+    private javax.swing.JTextField jTFRuso_Rango;
+    private javax.swing.JTextField jTFRuso_Rango1;
     // End of variables declaration//GEN-END:variables
+    ArrayList<Ruso> rusos = new ArrayList();
+    ArrayList<Aleman> alemanes = new ArrayList();
+    ArrayList<Alumno> alumnos = new ArrayList();
+    private DefaultMutableTreeNode nodo_seleccionado;
+    private Soldado soldado_seleccionada;
 }
